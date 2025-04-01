@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chi Tiết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #333;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info .field {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .info .value {
+            font-size: 18px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .status .status-title {
+            font-size: 18px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .status .status-value {
+            font-size: 18px;
+            color: orange;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            padding-top: 20px;
+        }
+
+        .footer a {
+            color: #008CBA;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .btn-detail {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-detail:hover {
+            background-color: #007B9A;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Thông tin chi tiết</h1>
+            <p>Thông tin vay vốn và tài chính</p>
+        </div>
+
+        <div class="info">
+            <div>
+                <p class="field">Họ và tên:</p>
+                <p class="value">Phạm Minh Huy</p>
+            </div>
+            <div>
+                <p class="field">Số CCCD:</p>
+                <p class="value">048203008129</p>
+            </div>
+            <div>
+                <p class="field">Số điện thoại:</p>
+                <p class="value">0934927546</p>
+            </div>
+            <div>
+                <p class="field">Công việc:</p>
+                <p class="value">Nhân viên nhà hàng</p>
+            </div>
+            <div>
+                <p class="field">Ngày sinh:</p>
+                <p class="value">27/02/2003</p>
+            </div>
+            <div>
+                <p class="field">Địa chỉ:</p>
+                <p class="value">*** Hàn Mạc Tử</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <div>
+                <p class="status-title">Chứng chỉ vay hiện tại:</p>
+                <p class="status-value">Chờ xác nhận</p>
+            </div>
+            <div>
+                <p class="status-title">Nợ xấu:</p>
+                <p class="status-value">Chờ xác nhận</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <div>
+                <p class="status-title">Tiền án nợ xấu:</p>
+                <p class="status-value">Chờ xác nhận</p>
+            </div>
+            <div>
+                <p class="status-title">Số tiền vay:</p>
+                <p class="status-value">30.000.000 VND</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <div>
+                <p class="status-title">Số tài khoản:</p>
+                <p class="status-value">43422412345555</p>
+            </div>
+            <div>
+                <p class="status-title">Ngân hàng:</p>
+                <p class="status-value">MB BANK</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <div>
+                <p class="status-title">Trạng thái giải ngân:</p>
+                <p class="status-value" style="color: red;" onclick="window.location.href='home.html'">Chưa thể giải ngân vì đang chờ xác nhận</p>
+            </div>
+        </div>
+        <div class="image-grid">
+            <img src="anh1.jpg" alt="Ảnh 1">
+            <img src="anh2.jpg" alt="Ảnh 2">
+            <img src="anh3.jpg" alt="Ảnh 3">
+        </div>
+        <div class="button-container">
+            <button class="btn-detail" onclick="window.location.href='home.html'">Chi tiết</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Công ty Tài Chính. <a href="#">Liên hệ hỗ trợ</a></p>
+    </div>
+
+</body>
+</html>
