@@ -5,7 +5,10 @@ body {
     background: #f4f4f4;
     text-align: center;
 }
-
+#register-btn {
+    pointer-events: none; /* Ngăn chặn click */
+    opacity: 0.5; /* Làm mờ nút */
+  }
 header {
     background: #007bff;
     color: white;
@@ -105,4 +108,16 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+.details-btn {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color : black;
+}
+
+.details-btn:hover {
+    background-color: #f1f1f1;
 }
